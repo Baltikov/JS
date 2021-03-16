@@ -1,0 +1,10 @@
+.item {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.Cart {
+    display: flex;
+    justify-content: space-around;
+}
