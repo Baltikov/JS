@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.center {
+  padding-left: calc(50%-600px);
+  padding-right: calc(50%-600px);
+}
+
+.Cart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 70px;
+}
+
+.Cart__placeBtn {
+  margin-left: 50px;
+}
+/*# sourceMappingURL=styles.css.map */
