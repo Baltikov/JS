@@ -1,0 +1,7 @@
+{
+    "data": [
+        { "atr": 11, "name": "Костюм", "price": 3550, "img": "./img/items_10.jpg"},
+        { "atr": 22, "name": "Перчатки", "price": 250, "img": "./img/items_11.jpg"},
+        { "atr": 33, "name": "Шорты", "price": 450, "img": "./img/items_12.jpg"}
+    ]
+}
