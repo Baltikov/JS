@@ -1,22 +1,31 @@
 <template>
     <div>
-        <header :class="[$style.myheader]">
-            hello
-        </header>
-        <main>
-            <h3>Content</h3>
-        </main>
+    <Vraper />
     </div>
 </template>
 
 <script>
+import Vraper from './components/Vraper.vue'
+
 export default {
 
+    data() {
+        return {
+            
+        }
+    },
+
+    components: {
+        Vraper,
+    },
+
+    methods: {
+        
+    }
 }
 </script>
 
 <style module>
-    .myheader {
-        color: red;
-    }
+
 </style>
+

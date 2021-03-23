@@ -1,6 +1,6 @@
 
-const path = require('path');
-const VueLoaderPlugin = require('vue-loader/lib/plugin');
+const path = require('path')
+const VueLoaderPlugin = require('vue-loader/lib/plugin')
 
 //  точка входа (переоределение) не через index.js а через файл указанный в объекте lernshop
 module.exports = {
@@ -49,5 +49,6 @@ module.exports = {
     ],
 
 }
+
 
 
