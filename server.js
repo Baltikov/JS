@@ -24,15 +24,15 @@ const server = http.createServer(function (req, res) {   //req вся инфор
             res.setHeader('Content-Type', 'application/json')
         }
 
-        body = fs.readFileSync(`./lesson3${req.url}`) // считает файлы (загрузит), по пути к которому указан путь.
+        body = fs.readFileSync(`./lesson6${req.url}`) // считает файлы (загрузит), по пути к которому указан путь.
     } catch {
-        body = fs.readFileSync(`./lesson3/index.html`)
+        body = fs.readFileSync(`./lesson6/index.html`)
     }
 
     res.end(body);
 });
 
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 4000;
 server.listen(port);
 
 console.log(`Server started on port ${port}!`);

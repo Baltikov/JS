@@ -1,0 +1,7 @@
+{
+    "data": [
+        { "atr": 44, "name": "Футболка", "price": 300, "img": "./img/items_4.jpg"},
+        { "atr": 55, "name": "Брюки", "price": 600, "img": "./img/items_5.jpg"},
+        { "atr": 66, "name": "Пальто", "price": 1000, "img": "./img/items_6.jpg"}
+    ]
+}

@@ -1,0 +1,7 @@
+{
+    "data": [
+        { "atr": 11, "name": "Рубашка", "price": 350, "img": "./img/items_1.jpg"},
+        { "atr": 22, "name": "Носки", "price": 150, "img": "./img/items_2.jpg"},
+        { "atr": 33, "name": "Пиджак", "price": 550, "img": "./img/items_3.jpg"}
+    ]
+}

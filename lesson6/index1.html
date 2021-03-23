@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <!-- main сделали блоком vue (внутри него находится наше приложение vue) стал доступен специиальнйы синтаксис-->
+        <h1 @click="oneHeadrClicl">{{message}}</h1>
+        <button @click="oneHeadrClicl">click me</button>
+        <div v-if="doShowcall">did you call me?</div>
+        <!-- vue когда будет индексировать данный div v-if="doShowcall" проверит его значение, если try то элемеент будет виден -->
+  
+        <input type="text" placeholder="1" v-model="inputInfo" />
+        <div>Введите данные {{inputInfo}}</div>
+        <div v-for="item in items">
+          <span>{{item.name}}</span>
+          <span>{{item.age}}</span>
+        </div>
+      </main> 
+
+      <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+      <script>
+        new Vue({
+          el: "main", // передать элемент где будет прирожение
+          data: {
+            message: "hello world", // данные который будем передавать в элементы
+            doShowcall: true,
+            inputInfo: "",
+            items: [
+              { name: "alex", age: 31 },
+              { name: "natasha", age: 28 },
+            ],
+          },
+          methods: {
+            // методы, изменять данные и т.д
+            oneHeadrClicl() {
+              alert(this.message);
+            },
+            oneHeadrClicl() {
+              this.message = "go go power rangers";
+            },
+          },
+          computed: {
+            getComputedDate() {
+              console.log("getComputedDate Called");
+              return new Date().getSeconds();
+            },
+            // Методы, которые должны возваращать значения
+            // Нельзя передавать параметра
+            // вызывает только один раз (пример кнопка)
+            // Обращение идет как к свойсву (через this, без ())
+          },
+        });
+      </script>
+</body>
+</html>
