@@ -23,7 +23,7 @@ export default {
    },
    methods: {
        GetToparent() {
-           this.$emit(Event, 'article1', this.product_data.article)
+           this.$emit( 'GetToparent', this.product_data.article)
        }
    }
 }

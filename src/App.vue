@@ -1,31 +1,18 @@
 <template>
-    <div>
-    <Vraper />
-    </div>
+  <List/>
 </template>
 
 <script>
-import Vraper from './components/Vraper.vue'
+ import List  from './components/List.vue'
 
 export default {
-
-    data() {
-        return {
-            
-        }
-    },
-
     components: {
-        Vraper,
-    },
-
-    methods: {
-        
+        List,
     }
+
 }
 </script>
 
-<style module>
+<style>
 
 </style>
-
