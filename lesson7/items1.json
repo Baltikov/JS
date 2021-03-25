@@ -1,0 +1,9 @@
+{
+
+
+   "1": {"name": "T_Shrt", "price": 500, "img": "./img/1.jpg" },
+   "2": {"name": "pants", "price": 1000, "img": "./img/2.png"},
+   "3": {"name": "shoes", "price": 1500, "img": "./img/3.png"}
+
+
+}
