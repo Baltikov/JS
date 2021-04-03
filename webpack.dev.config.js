@@ -1,12 +1,12 @@
-const {merge} = require('webpack-merge');
-const base = require('./webpack.config');
+const { merge } = require('webpack-merge')
+const base = require('./webpack.config')
 
 module.exports = merge(base, {
-    devServer: { // новый сервер
-        contentBase: './lesson7', // как папку разложить на сервере
-        publicPath: '/js', //относительный путь до точки входа
-        host:'localhost',
-        port: '4000',
+    devServer: {
+        contentBase: './lesson8',
+        publicPath: '/js',
+        host: 'localhost',
+        port: 4000,
         hot: true,
-    }
+    },
 })

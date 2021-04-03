@@ -1,0 +1,152 @@
+@media (max-width: 1140px) {
+
+    /* ГЛАВНАЯ */
+
+    .center {
+        padding-left: calc(50% - 369px);
+        padding-right: calc(50% - 369px);
+    }
+
+    .promo {
+        &__right {
+            padding-left: 40px;
+
+            &_heading {
+                font-size: 42px;
+                line-height: 53px;
+            }
+
+            &_text {
+                font-size: 22px;
+            }
+        }
+    }
+
+    .catalog {
+        padding-top: 20px;
+    }
+
+    .info {
+        .info-info {
+            min-height: 610px;
+            flex-direction: column;
+            justify-content: center;
+
+            .info_content {
+                height: 134px;
+            }
+
+            .info_content:not(:first-child) {
+                margin-top: 48px;
+            }
+        }
+    }
+
+    .footer {
+        .footer_info {
+            min-height: 614px;
+            justify-content: center;
+
+            .subscribe {
+                justify-content: flex-start;
+            }
+        }
+    }
+
+    /* КАТАЛОГ */
+
+    .choice__option {
+        justify-content: space-between;
+        margin-top: 24px;
+        margin-bottom: 40px;
+
+        .filter {
+            width: auto;
+        }
+    }
+
+    .sort {
+        width: auto;
+    }
+
+    .products {
+        .feature_items {
+            .items_not {
+                display: none;
+            }
+        }
+    }
+
+    /* ПРОДУКТЫ */
+
+    .product__woman {
+        min-height: 624px;
+
+        .woman__img {
+            min-width: 466px;
+            min-height: 565px;
+        }
+    }
+
+    .product__content {
+        width: 100%;
+    }
+
+    /* КОРЗИНА */
+
+    .cart {
+        margin-top: 59px;
+
+        &__product {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            &_choice {
+                width: 100%;
+            }
+
+            .choice_m {
+                margin-bottom: 62px;
+            }
+
+            &_content {
+                margin-right: 137px;
+                max-width: 399px;
+            }
+
+            &_footer {
+                width: 508px;
+            }
+        }
+
+        &__info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            margin-top: 64px;
+
+            &_form {
+                margin-bottom: 0px;
+            }
+        }
+    }
+
+    /* РЕГИСТРАЦИЯ */
+
+    .registration {
+        margin-top: 40px;
+
+        &__info {
+            margin-left: 22px;
+            width: 359px;
+
+            &_text {
+                font-size: 16px;
+                line-height: 19px;
+            }
+        }
+    }
+}

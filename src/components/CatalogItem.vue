@@ -1,46 +1,44 @@
 <template>
-  <div :class="[$style.item]">
-  <img :src=" './img/' + product_data.image " alt="image">
-  
-      <h2 class="CtalogItem__name">{{product_data.name}}</h2>
-      <h3 class="CtalogItem__price">{{product_data.price}}</h3>
-      <button class="CtalogItem__add" @click="GetToparent">Add to Cart </button>
-  </div>
+    <div :class="[$style.goodItem]">
+        <img :src=" item_data.img " alt="img">
+        <p>Товар: {{ item_data.name }}</p>
+        <p>Цена: {{ item_data.price }} Р</p>
+        <button @click="addToCart">Добавить в корзину</button>
+    </div>
 </template>
 
 <script>
 export default {
-   props: {
-       product_data: {
-           type: Object,
-           default() {
-               return{}
-           }
-       }
-   },
-   data () {
-       return {}
-   },
-   methods: {
-       GetToparent() {
-           this.$emit( 'GetToparent', this.product_data.article)
-       }
-   }
+    data () {
+        return {
+            
+        }
+    },
+    props: {
+        item_data: {
+            type: Object,
+            default() {
+                return {}
+            }
+        }
+    },
+    computed: {
+        
+    },
+    methods: {
+        addToCart() {
+            this.$emit('clicked', this.item_data.atr)
+        }
+    }
 }
 </script>
 
 <style module>
-.item {
-    width: 400px;
-    height: 270px;
-    display: flex;
-    box-shadow: 0 0 8px 0;
-    border: solid 2px blue;
-    margin-bottom: 5px;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    margin-left: 15px;
-}
+    .goodItem {
+        flex-basis: 25%;
+        box-shadow: 0 0 8px 0 #e0e0e0;
+        margin-bottom: 20px;
+        text-align: center;
+        padding-bottom: 15px;
+    }
 </style>
-

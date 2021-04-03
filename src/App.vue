@@ -1,18 +1,37 @@
 <template>
-  <List/>
+    <div>
+        <div :class="[$style.content]">
+            <Header />
+            <keep-alive>
+                <router-view></router-view>
+            </keep-alive>
+        </div>
+        <Footer />
+    </div>
 </template>
 
 <script>
- import List  from './components/List.vue'
+import Header from './components/Header.vue'
+import Footer from './components/Footer.vue'
 
 export default {
+    data () {
+        return {
+            
+        }
+    },
     components: {
-        List,
-    }
-
+        Header,
+        Footer
+    },
+    methods: {
+        
+    },
 }
 </script>
 
-<style>
-
+<style module>
+    .content {
+        min-height: calc(100vh - 80px);
+    }
 </style>

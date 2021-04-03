@@ -1,0 +1,50 @@
+{
+    "1": {
+        "id": 1,
+        "article": "Atr01",
+        "name": "Рубашка",
+        "price": 350,
+        "img": "./img/items_1.jpg",
+        "cart": "./img/basket_cart.svg",
+        "text": "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi."},
+    "2": {
+        "id": 2,
+        "article": "Atr02",
+        "name": "Носки",
+        "price": 150,
+        "img": "./img/items_2.jpg",
+        "cart": "./img/basket_cart.svg",
+        "text": "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi."},
+    "3": {
+        "id": 3,
+        "article": "Atr03",
+        "name": "Пиджак",
+        "price": 550, "img":
+        "./img/items_3.jpg",
+        "cart": "./img/basket_cart.svg",
+        "text": "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi."},
+    "4": {
+        "id": 4,
+        "article": "Atr04",
+        "name": "Футболка",
+        "price": 350,
+        "img": "./img/items_4.jpg",
+        "cart": "./img/basket_cart.svg",
+        "text": "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi."},
+    "5": {
+        "id": 5,
+        "article": "Atr05",
+        "name": "Брюки",
+        "price": 150, "img":
+        "./img/items_5.jpg",
+        "cart": "./img/basket_cart.svg",
+        "text": "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi."},
+    "6": {
+        "id": 6,
+        "article": "Atr06",
+        "name": "Пальто",
+        "price": 550,
+        "img": "./img/items_6.jpg",
+        "cart": "./img/basket_cart.svg",
+        "text": "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi."}
+}

@@ -1,0 +1,110 @@
+.product__woman {
+    min-height: 777px;
+    max-width: 100%;
+    background: #F7F7F7 url(./img/woman.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .product__angle {
+        min-width: 47px;
+        height: 47px;
+        background: rgba(42, 42, 42, 0.15);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .angle:hover {
+        color: $colorSelect;
+    }
+
+    .woman__img {
+        min-width: 597px;
+        min-height: 724px;
+    }
+}
+
+.product__content {
+    width: 1140px;
+    background: #FFFFFF;
+    border: 1px solid #EAEAEA;
+    min-height: 600px;
+    margin: 0 auto 68px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    transform: translateY(-65px);
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &-top {
+        max-width: 555px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product__heading {
+        font-family: Lato;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 17px;
+        color: $colorSelect;
+    }
+
+    .product__hr-color {
+        width: 63px;
+        border: none;
+        background-color: $colorSelect;
+        color: $colorSelect;
+        height: 3px;
+        margin: 12px auto;
+    }
+
+    .heading_mini {
+        font-size: 18px;
+        line-height: 22px;
+        color: #4D4D4D;
+    }
+
+    .product__text {
+        font-family: Lato;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 17px;
+        text-align: center;
+        color: #5E5E5E;
+        margin-top: 48px;
+        margin-bottom: 32px;
+    }
+
+    .product__price {
+        font-family: Lato;
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 29px;
+        color: #EF5B70;
+    }
+
+    .product__hr {
+        width: 642px;
+        background-color: #5E5E5E;
+        color: #5E5E5E;
+        height: 1px;
+        margin: 65px auto;
+    }
+
+    .sort {
+        max-width: 555px;
+        justify-content: center;
+    }
+
+    .size {
+        max-width: 109px;
+    }
+}

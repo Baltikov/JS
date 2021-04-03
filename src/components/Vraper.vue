@@ -2,6 +2,7 @@
     <div :class="[$style.vraper]">
         <Catalog1 />
 
+
     </div>
 </template>
 

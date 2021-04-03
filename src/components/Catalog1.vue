@@ -21,22 +21,22 @@ export default {
         return { // -Персональные данные компонента-
             products: [
                 {
-                name: "shirt",
-                price: 200,
-                article: 11,
-                image: "po.jpg",
+                "name": "shirt",
+                "price": 200,
+                "article": 11,
+                "image": "po.jpg",
                 },
                 {
-                name: "sgo",
-                price: 300,
-                article: 12,
-                image: "2.jpg",
+                "name": "sgo",
+                "price": 300,
+                "article": 12,
+                "image": "2.jpg",
                 },
                 {
-                name: "hat",
-                price: 500,
-                article: 13,
-                image: "3.jpg",
+                "name": "hat",
+                "price": 500,
+                "article": 13,
+                "image": "3.jpg",
                 },
             ]
         } 

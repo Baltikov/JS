@@ -1,54 +1,46 @@
-
 const path = require('path')
 const VueLoaderPlugin = require('vue-loader/lib/plugin')
 
-//  точка входа (переоределение) не через index.js а через файл указанный в объекте lernshop
 module.exports = {
-    entry: './src/mainvue.js', //точка входа
+    entry: './src/mainNew.js',
     output: {
-        path: path.resolve(__dirname, "./lesson7/js"),
-        filename: 'main1vue1.js',  // точка выхода
+        path: path.resolve(__dirname, './lesson8/js'),
+        filename: 'main.js'
     },
     resolve: {
         alias: {
             vue: 'vue/dist/vue.js',
         },
     },
-    module: {   
-        rules: [  // правила, какой тип файлов и как загружать
+    module: {
+        rules: [
             {
                 test: /\.js$/,
                 use: [
-                    { loader: 'babel-loader'}
-                ]
+                    { loader: 'babel-loader' },
+                ],
             },
-
             {
                 test: /\.css$/,
                 use: [
-                    {loader: "style-loader"},
-                    {
-                     loader: "css-loader",
-                     options: {
-                         modules: true,
-                        }
+                    { loader: 'style-loader' },
+                    { 
+                        loader: 'css-loader',
+                        options: {
+                            modules: true,
+                        },
                     },
                 ],
             },
-
             {
                 test: /\.vue$/,
                 use: [
-                    {loader: 'vue-loader'}
+                    { loader: 'vue-loader' },
                 ]
-            },
+            }
         ]
     },
     plugins: [
         new VueLoaderPlugin()
-    ],
-
+    ]
 }
-
-
-
