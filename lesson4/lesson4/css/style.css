@@ -1,0 +1,179 @@
+.center {
+    padding-left: calc(50% - 570px);
+    padding-right: calc(50% - 570px);
+}
+.goods-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border: solid 1px black;
+    padding-top: 20px;
+    margin-top: 20px;
+}
+
+.goodItem {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.cart {
+    margin-top: 30px;
+    border: solid 1px red;
+    display: flex;
+    flex-direction: column;
+}
+
+.goods-cart {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.good {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.good-btn {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.btnItem {
+    min-width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btnDel {
+    min-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cart-sum {
+    display: flex;
+    align-items: center;
+    height: 30px;
+    font-size: 20px;
+    line-height: 29px;
+    color: black;
+    font-weight: bold;
+}
+
+.cart-sum input {
+    margin-left: 10px;
+}
+
+.goods-more {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.goodMoreBtn button {
+    width: 500px;
+    height: 30px;
+}
+
+
+.info {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.info_heading {
+    display: flex;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.04em;
+    color: #1F3F68;
+    margin-bottom: 48px;
+    font-weight: bold;
+}
+
+.info_text {
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.05em;
+    color: #1F3F68;
+    list-style-type: none;
+    text-decoration: none;
+    margin-bottom: 16px;
+}
+
+.online {
+    font-weight: 300;
+    letter-spacing: 0.04em;
+}
+
+.user_form {
+    background: #FFFFFF;
+    box-shadow: 5px 10px 50px rgba(16, 112, 177, 0.2);
+    border-radius: 10px;
+    width: 540px;
+    padding: 26px 56px 56px 56px;
+    box-sizing: border-box;
+}
+
+.user_heading {
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.04em;
+    color: #1F3F68;
+    opacity: 0.8;
+    font-weight: bold;
+}
+
+.user_text {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.1em;
+    color: black;
+    border: 1px solid #356EAD;
+    box-sizing: border-box;
+    border-radius: 10px;
+    width: 428px;
+    height: 72px;
+    align-items: center;
+    padding-left: 36px;
+}
+
+.message {
+    height: 144px;
+    padding-top: 21px;
+    padding-left: 36px;
+}
+
+.submit {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+
+    width: 428px;
+    height: 72px;
+    background: #5A98D0;
+    box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
+    border-radius: 10px;
+    filter: drop-shadow(5px 10px 20px rgba(16, 112, 177, 0.2));
+}
+
+.error {
+    font-weight: normal;
+    color: red;
+}

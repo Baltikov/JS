@@ -1,39 +1,63 @@
 
+const express = require('express');
+const fs = require('fs');
+const app = express();
+const bodyParser = require('body-parser');
 
-// создаем переменные где через require получаем достук к объекту(билиотека) унее есть свои методы
-let http = require('http');
-const fs = require('fs'); //файл систем, предоставляет объект где содержатся, методы для работы с файловой системой.
+app.use(express.static('./lesson8'));
+app.use(bodyParser.json());
 
-
-
-// local3000 вместо домена.URl будет путь к его страницам. на каждый запрос с клиента(бразуера) будет запускатся фукция createServer
-const server = http.createServer(function (req, res) {   //req вся информация о запросе пришедего с клиента(URL.cookie) res.методы для ответа бразуератзь
-    let body = null;
-    try {
-        const ext = req.url.split('.')[1]
-        const ifSvg = ext === 'svg'
-        if (ifSvg) {
-            res.setHeader('Content-Type', 'image/svg+xml')
-        }
-        const ifPng = ext === 'png'
-        if (ifPng) {
-            res.setHeader('Content-Type', 'image/png')
-        }
-        const ifJson = ext === 'json'
-        if (ifJson) {
-            res.setHeader('Content-Type', 'application/json')
-        }
-
-        body = fs.readFileSync(`./lesson3${req.url}`) // считает файлы (загрузит), по пути к которому указан путь.
-    } catch {
-        body = fs.readFileSync(`./lesson3/index.html`)
-    }
-
-    res.end(body);
+app.get('/itemslist/:page', (req, res) => {
+    const page = req.params.page;
+    fs.readFile(`./lesson8/database/items${page}.json`, 'utf8', (err, data) => {
+        res.send(data);
+    });
 });
 
-const port = process.env.PORT || 3000;
-server.listen(port);
+app.post('/itemslist', (req, res) => {
+    const offset = 12;
+    const file = './lesson8/database/items3.json';
 
-console.log(`Server started on port ${port}!`);
+    fs.readFile(file, 'utf8', (err, data) => {
+        const list = JSON.parse(data || {});
+        const amoundOfData = Object.keys(list).length;
+        const newID = offset + amoundOfData + 1;
+        const newItem = req.body;
+        newItem.id = newID;
+        list[newID] = newItem;
+        fs.writeFile(file, JSON.stringify(list), (err) => {
+            if (err) {
+                console.log(err);
+            } else {
+                res.send(list);
+            }
+        });
+    })
+})
 
+app.post('/cartlist', (req, res) => {
+    const offset = 0;
+    const file = './lesson8/database/cart.json';
+
+    fs.readFile(file, 'utf8', (err, data) => {
+        const list = JSON.parse(data || {});
+        const amoundOfData = Object.keys(list).length;
+        const newID = offset + amoundOfData + 1;
+        const newItem = req.body;
+        newItem.id = newID;
+        list[newID] = newItem;
+        fs.writeFile(file, JSON.stringify(list), (err) => {
+            if (err) {
+                console.log(err);
+            } else {
+                res.send(list);
+            }
+        });
+    })
+})
+
+const port = process.env.PORT || 4000;
+
+app.listen(port, () => {
+    console.log('Server started!');
+});

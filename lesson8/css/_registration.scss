@@ -1,0 +1,87 @@
+.registration {
+    margin-top: 64px;
+    min-height: 515px;
+    display: flex;
+    justify-content: space-between;
+
+    &__contact {
+        width: 359px;
+
+        &_block {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &_radio {
+            display: flex;
+            margin-top: 33px;
+            margin-bottom: 33px;
+            font-family: Lato;
+            font-weight: 300;
+            font-size: 11px;
+            line-height: 13px;
+            color: #000000;
+
+            input {
+                margin-right: 10px;
+            }
+
+            input:not(:first-child) {
+                margin-left: 20px;
+            }
+        }
+
+        &_heading {
+            font-family: Lato;
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 19px;
+            color: #222222;
+        }
+
+        &_text {
+            font-family: Lato;
+            font-weight: 300;
+            font-size: 13px;
+            line-height: 16px;
+            color: #B1B1B1;
+            margin-top: 15px;
+            margin-bottom: 40px;
+        }
+
+        &_button {
+            width: 167px;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 17px;
+
+            svg {
+                margin-left: 20px;
+            }
+        }
+    }
+
+    &__info {
+        width: 652px;
+
+        &_text {
+            font-family: Lato;
+            font-weight: 300;
+            font-size: 24px;
+            line-height: 29px;
+            color: #000000;
+        }
+
+        &_mb {
+            margin-bottom: 22px;
+        }
+
+        &_mini:not(:last-child) {
+            margin-bottom: 16px;
+        }
+
+        img {
+            margin-right: 23px;
+        }
+    }
+}
